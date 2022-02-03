@@ -28,3 +28,20 @@ const photoList = [
 app.get("/api/photo/list", function(req, res, next){
     res.json(photoList);
 });
+
+// 写真リストを取得するAPI
+app.get("/api/photo/list", function(req, res){
+    let photo: {
+        id: string;
+        name: string;
+        type: string;
+        dataUrl: string;
+    };
+    let i: number;
+    for(i=0; i<photoList.length; i++) {
+        if (photoList[i].id == req.params.photoId){
+            photo = photoList[i];
+        }
+    }
+    res.json(photo);
+});
