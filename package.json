@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "express": "^4.17.2"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "sample",
+  "description": "",
+  "version": "1.0.0",
+  "main": "sample.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kentozaka46/node-sample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kentozaka46/node-sample/issues"
+  },
+  "homepage": "https://github.com/kentozaka46/node-sample#readme"
 }
