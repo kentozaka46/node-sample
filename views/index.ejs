@@ -2,6 +2,15 @@
 
 <body>
     <h1>New Project</h1>
+    <script>
+        const xhr = new XMLHttpRequest();
+        xhr.open("GET", "/api/photo/list");
+        xhr.addEventListener("load", function(e) {
+            const photoList = JSON.parse(xhr.responseText);
+            console.log(photoList);
+        });
+        xhr.send();
+    </script>
 </body>
 
 </html>
